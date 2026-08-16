@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Boubacar SIDIBE - Étudiant Ingénieur en Génie Informatique">
+    <meta name="description" content="Portfolio de Boubacar SIDIBE - Ingénieur d'État en Génie Informatique">
     <meta name="keywords" content="portfolio, ingénieur, développeur, web, Guinée">
     <meta name="author" content="Boubacar SIDIBE">
-    <title>Boubacar SIDIBE | Etudiant en Développement Logiciel</title>
+    <title>Boubacar SIDIBE | Ingénieur d'État en Génie Informatique</title>
 
     <!-- Box Icons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -15,8 +15,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Favicon (optionnel) -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -26,17 +29,25 @@
     <!--===== HEADER =====-->
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">SIDIBE</a>
+            <a href="#home" class="nav__logo">SIDIBE</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Accueil</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
                     <li class="nav__item"><a href="#experience" class="nav__link">Expériences</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
-                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
-                    <li class="nav__item"><a href="#leadership" class="nav__link">Leadership</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#certifications" class="nav__link nav__link--dropdown">
+                            Parcours
+                            <i class='bx bx-chevron-down nav__dropdown-icon'></i>
+                        </a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="#certifications" class="nav__dropdown-link">Certifications</a></li>
+                            <li><a href="#distinctions" class="nav__dropdown-link">Distinctions</a></li>
+                            <li><a href="#leadership" class="nav__dropdown-link">Leadership</a></li>
+                        </ul>
+                    </li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -58,12 +69,12 @@
             <div class="hero__content">
                 <p class="hero__greeting">👋 Salut, je suis</p>
                 <h1 class="hero__title"><span>Boubacar SIDIBE</span></h1>
-                <p class="hero__subtitle">Étudiant en Développement Logiciel & Développeur Web
+                <p class="hero__subtitle">Ingénieur d'État en Génie Informatique & Développeur Web
                 </p>
                 <p class="hero__description">
-                    En 5<sup>e</sup> année de Génie Informatique à l’École Polytechnique des Ingénieurs de l’Université
-                    Kofi Annan de Guinée. Passionné par le développement web, le design UX/UI, l’intelligence
-                    artificielle et les nouvelles technologies.
+                    Diplômé de l'École Polytechnique des Ingénieurs de l'Université
+                    Kofi Annan de Guinée, spécialité Développement Logiciel. Passionné par le développement web, le design UX/UI, l'intelligence
+                    artificielle, l'analyse et la science des données, et les nouvelles technologies.
                 </p>
 
 
@@ -91,11 +102,6 @@
                         rel="noopener noreferrer">
                         <i class='bx bxl-whatsapp'></i>
                     </a>
-
-                    <!-- <a href="https://twitter.com/votre-username" class="social-link" title="Twitter" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class='bx bxl-twitter'></i>
-                    </a> -->
                 </div>
             </div>
 
@@ -119,16 +125,15 @@
                 </div>
 
                 <div class="about__content">
-                    <h3>Je suis étudiant ingénieur</h3>
+                    <h3>Je suis Ingénieur d'État en Génie Informatique</h3>
                     <p class="about__text">
-                        Actuellement en dernière année du cycle d’ingénieur à l’École Polytechnique de l’Université Kofi
-                        Annan de Guinée,
-                        spécialisé en Développement Logiciel. Passionné par le développement web, le design UX/UI,
-                        l’intelligence artificielle
-                        et l’innovation technologique.
+                        Diplômé de l'École Polytechnique de l'Université Kofi
+                        Annan de Guinée, spécialisé en Développement Logiciel (mémoire soutenu le 29/06/2026). Passionné par le développement web, le design UX/UI,
+                        l'intelligence artificielle, l'analyse et la science des données
+                        et l'innovation technologique.
                     </p>
                     <p class="about__text">
-                        Mon parcours académique m’a permis d’acquérir des compétences solides en programmation,
+                        Mon parcours académique m'a permis d'acquérir des compétences solides en programmation,
                         en gestion de projets Agile/Scrum et en résolution de problèmes complexes. Je suis constamment à
                         la recherche
                         de nouvelles opportunités pour apprendre, créer et évoluer professionnellement.
@@ -138,17 +143,17 @@
                     <div class="about__info">
                         <div class="info-box">
                             <i class='bx bx-briefcase'></i>
-                            <h4>6+</h4>
+                            <h4>9+</h4>
                             <span>Projets Réalisés</span>
                         </div>
                         <div class="info-box">
                             <i class='bx bx-award'></i>
-                            <h4>5+</h4>
+                            <h4>7+</h4>
                             <span>Attestations</span>
                         </div>
                         <div class="info-box">
                             <i class='bx bx-code-alt'></i>
-                            <h4>10+</h4>
+                            <h4>15+</h4>
                             <span>Technologies</span>
                         </div>
                     </div>
@@ -178,15 +183,6 @@
                             pour Orange/Mobile money et le contexte local guinéen.
                         </p>
 
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 95%;"></div>
-                            </div>
-                            <span class="progress-text">95%</span>
-                        </div>
-
                         <div class="project-card__tags">
                             <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
@@ -211,20 +207,11 @@
                         <h3 class="project-card__title">Kof-IA Academy</h3>
 
                         <p class="project-card__description">
-                            Plateforme d’apprentissage en ligne basée sur l’IA, développée avec Next.js.
+                            Plateforme d'apprentissage en ligne basée sur l'IA, développée avec Next.js.
                             Elle propose des cours vidéo, un tableau de bord administrateur, des recommandations
                             intelligentes
-                            et une interface moderne optimisée pour l’éducation numérique.
+                            et une interface moderne optimisée pour l'éducation numérique.
                         </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
-                            </div>
-                            <span class="progress-text">75%</span>
-                        </div>
 
                         <div class="project-card__tags">
                             <span class="tag">Next.js</span>
@@ -252,21 +239,12 @@
                         <h3 class="project-card__title">MoulaBox-ASEEP</h3>
 
                         <p class="project-card__description">
-                            Plateforme collaborative de gestion d’idées développée pour l’ASEEP.
-                            Elle permet de proposer, voter, commenter et suivre l’évolution
-                            des initiatives au sein de l’association.
-                            Projet réalisé en équipe par la Commission Tech, où j’étais chargé
+                            Plateforme collaborative de gestion d'idées développée pour l'ASEEP.
+                            Elle permet de proposer, voter, commenter et suivre l'évolution
+                            des initiatives au sein de l'association.
+                            Projet réalisé en équipe par la Commission Tech, où j'étais chargé
                             de concevoir et développer toute la partie Frontend.
                         </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 100%;"></div>
-                            </div>
-                            <span class="progress-text">100%</span>
-                        </div>
 
                         <div class="project-card__tags">
                             <span class="tag">Next.js 14</span>
@@ -287,43 +265,6 @@
                     </div>
                 </div>
 
-
-                <!-- Projet Kankalabé FiFow -->
-                <div class="project-card">
-                    <img src="assets/img/projects/kankalabe.PNG" alt="Kankalabé FiFow" class="project-card__img">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Kankalabé FiFow</h3>
-                        <p class="project-card__description">
-                            Plateforme web développée pour la sous-préfecture de Kankalabé, centralisant les
-                            informations locales,
-                            les projets communautaires et les services essentiels.
-                        </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 70%;"></div>
-                            </div>
-                            <span class="progress-text">70%</span>
-                        </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">React.js</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/BOUBACARSI/kankalabe-website" class="project-link"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class='bx bxl-github'></i>
-                                Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Projet Fabisi TECH -->
                 <div class="project-card">
                     <img src="assets/img/projects/fabisitech.PNG" alt="Fabisi TECH" class="project-card__img">
@@ -333,15 +274,6 @@
                             Plateforme de vente en ligne pour ordinateurs et accessoires, intégrant panier, paiement
                             sécurisé et gestion complète des commandes.
                         </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 80%;"></div>
-                            </div>
-                            <span class="progress-text">80%</span>
-                        </div>
 
                         <div class="project-card__tags">
                             <span class="tag">Laravel</span>
@@ -353,157 +285,18 @@
                     </div>
                 </div>
 
-                <!-- Projet Fabisi e-Edu -->
-                <div class="project-card">
-                    <img src="assets/img/projects/fabisieedu.PNG" alt="Fabisi e-Edu" class="project-card__img">
-                    <div class="project-card__content project-card-relative">
-                        <h3 class="project-card__title">Fabisi e-Edu</h3>
-                        <p class="project-card__description">
-                            Plateforme d’apprentissage en ligne pour tous les niveaux, offrant des cours gratuits et
-                            payants pour renforcer l’éducation guinéene. Accessible à tous.
-                        </p>
+            </div>
 
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 60%;"></div>
-                            </div>
-                            <span class="progress-text">60%</span>
-                        </div>
-
-
-                        <div class="project-card__tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/BOUBACARSI/Fabisi-e-Edu" class="project-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class='bx bxl-github'></i>
-                                Code
-                            </a>
-                        </div>
-                    </div>
+            <!-- Bandeau Autres projets -->
+            <div class="projects__more">
+                <div class="projects__more-text">
+                    <h3>+ 5 autres projets</h3>
+                    <p>Kankalabé FiFow, Fabisi e-Edu, Système de Distribution de Santé, Système de Gestion des Notes,
+                        Gestion d'Hébergement Étudiant — code source disponible sur GitHub.</p>
                 </div>
-
-
-
-                <!-- Projet Système de Distribution de Santé -->
-                <div class="project-card">
-                    <img src="assets/img/projects/sdsante.PNG" alt="Système de Distribution de Santé"
-                        class="project-card__img">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Système de Distribution de Santé</h3>
-                        <p class="project-card__description">
-                            Application web destinée à optimiser la répartition des ressources médicales et la gestion
-                            des approvisionnements dans les centres de santé.
-                        </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 85%;"></div>
-                            </div>
-                            <span class="progress-text">85%</span>
-                        </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">JSON(stockage local)</span>
-                        </div>
-
-                        <div class="project-card__links">
-                            <a href="https://github.com/BOUBACARSI/sante-distribution" class="project-link"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class='bx bxl-github'></i>
-                                Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projet Système de Gestion des Notes -->
-                <div class="project-card">
-                    <img src="assets/img/projects/gnegil3.PNG" alt="Système de Gestion Scolaire"
-                        class="project-card__img">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Système de Gestion des Notes</h3>
-                        <p class="project-card__description">
-                            Plateforme web conçue pour la gestion des notes des étudiants du cycle ingénieur en Génie
-                            Informatique à l’Université Kofi Annan, adaptable à toute autre spécialité ou classe.
-                        </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 99%;"></div>
-                            </div>
-                            <span class="progress-text">99%</span>
-                        </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">JSON</span>
-                        </div>
-
-                        <div class="project-card__links">
-                            <a href="https://systemegestionnotes.vercel.app" class="project-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class='bx bx-link-external'></i>
-                                Demo
-                            </a>
-                            <a href="https://github.com/BOUBACARSI/Gestion-notes" class="project-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class='bx bxl-github'></i>
-                                Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projet Gestion d’Hébergement Étudiant -->
-                <div class="project-card">
-                    <img src="assets/img/projects/ghe.PNG" alt="Gestion d’Hébergement Étudiant"
-                        class="project-card__img">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Gestion d’Hébergement Étudiant</h3>
-                        <p class="project-card__description">
-                            Application de bureau développée pour la gestion des hébergements étudiants au sein des
-                            universités et établissements supérieurs, permettant la gestion des chambres, des étudiants,
-                            des paiements et du personnel.
-                        </p>
-
-                        <!-- Progress bar -->
-                        <div class="progress-wrapper">
-                            <span class="progress-title">Avancement du projet</span>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 100%;"></div>
-                            </div>
-                            <span class="progress-text">100%</span>
-                        </div>
-
-                        <div class="project-card__tags">
-                            <span class="tag">C# (WinForms)</span>
-                            <span class="tag">SQL Server Express LocalDB (.mdf)</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/BOUBACARSI/Gestion-hebergement-etudiant" class="project-link"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class='bx bxl-github'></i>
-                                Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://github.com/BOUBACARSI" class="project-link project-link--more" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-github'></i> Voir sur GitHub
+                </a>
             </div>
         </div>
     </section>
@@ -514,7 +307,7 @@
             <h2 class="section-title">Expériences Professionnelles</h2>
 
             <div class="experience__container">
-        <!-- Expérience - Tulip Industries -->
+        <!-- Expérience - Tulip Industries (contenu inchangé) -->
         <div class="experience__item">
             <div class="experience__header">
                 <div class="experience__left">
@@ -522,16 +315,16 @@
                     <p class="experience__company">Tulip Industries</p>
                 </div>
                 <div class="experience__right">
-                    <span class="experience__date">Avr. 2026 – Présent</span>
+                    <span class="experience__date">Avr. - Juil. 2026</span>
                     <span class="experience__location">Conakry, Guinée</span>
                 </div>
             </div>
 
             <ul class="experience__description">
-                <li>Participation au développement d’applications web modernes</li>
-                <li>Intégration d’interfaces utilisateurs avec React / Next.js</li>
-                <li>Collaboration avec l’équipe technique sur des projets réels</li>
-                <li>Optimisation des performances et amélioration de l’UX</li>
+                <li>Participation au développement d'applications web modernes</li>
+                <li>Intégration d'interfaces utilisateurs avec React / Next.js</li>
+                <li>Collaboration avec l'équipe technique sur des projets réels</li>
+                <li>Optimisation des performances et amélioration de l'UX</li>
             </ul>
 
             <div class="experience__tags">
@@ -562,7 +355,7 @@
                         <li>Vente de matériel informatique (ordinateurs, accessoires, autres)</li>
                         <li>Développement de solutions innovantes pour clients locaux</li>
                         <li>Développement Full Stack de plateformes web et e-commerce</li>
-                        <li>Gestion de projets techniques et coordination d’équipe</li>
+                        <li>Gestion de projets techniques et coordination d'équipe</li>
                     </ul>
                     <div class="experience__tags">
                         <span class="tag">Laravel</span>
@@ -588,10 +381,10 @@
                     </div>
 
                     <ul class="experience__description">
-                        <li>Développement de la plateforme collaborative de gestion d’idées pour l’ASEEP</li>
+                        <li>Développement de la plateforme collaborative de gestion d'idées pour l'ASEEP</li>
                         <li>Conception et réalisation de toute la partie Frontend</li>
                         <li>Travail en équipe avec la Commission Tech en méthodologie Agile</li>
-                        <li>Fonctionnalités : proposer, voter, commenter et suivre l’évolution des initiatives</li>
+                        <li>Fonctionnalités : proposer, voter, commenter et suivre l'évolution des initiatives</li>
                         <li>Déploiement et hébergement sur Vercel avec gestion des authentifications via NextAuth.js
                         </li>
                     </ul>
@@ -615,7 +408,7 @@
                             <p class="experience__company">Orange Guinée - Orange Digital Center</p>
                         </div>
                         <div class="experience__right">
-                            <span class="experience__date">Sep. 2024 – Oct. 2024</span>
+                            <span class="experience__date">Sep. – Oct. 2024</span>
                             <span class="experience__location">Conakry, Guinée</span>
                         </div>
                     </div>
@@ -633,9 +426,6 @@
                         <span class="tag">Assistance technique</span>
                     </div>
                 </div>
-
-
-
 
             </div>
         </div>
@@ -767,7 +557,6 @@
     <section class="certifications section" id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications & Formations</h2>
-            <!-- Attestation - Générale-->
             <div class="certifications__container">
                 <!-- Attestation - Marketing Numérique-->
                 <div class="certification__item">
@@ -793,15 +582,45 @@
                         2026),
                         axée sur la conception et la gestion de campagnes de marketing digital, la production de
                         contenus,
-                        la planification stratégique et l’analyse des indicateurs de performance.
+                        la planification stratégique et l'analyse des indicateurs de performance.
                     </p>
 
                     <div class="certification__skills">
                         <span class="skill-tag">Marketing Digital</span>
                         <span class="skill-tag">Gestion de Campagne</span>
                         <span class="skill-tag">Content Marketing</span>
-                        <span class="skill-tag">Plan d’Action</span>
+                        <span class="skill-tag">Plan d'Action</span>
                         <span class="skill-tag">Analyse KPI</span>
+                    </div>
+                </div>
+
+                <!-- Attestation - Data Analysis Excel (Coursera) -->
+                <div class="certification__item">
+                    <div class="certification__header">
+                        <div class="certification__left">
+                            <h3 class="certification__title">Introduction to Data Analysis using Microsoft Excel</h3>
+                            <p class="certification__issuer">Coursera — Projet guidé (Freedom Learning Group)</p>
+                        </div>
+                        <div class="certification__right">
+                            <span class="certification__date">Septembre 2025</span>
+                            <span class="certification__badge">Attesté</span>
+                            <a class="certification__download"
+                                href="https://coursera.org/verify/0VD8XS8TCMCI" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i>
+                                Vérifier
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="certification__description">
+                        Projet guidé sur l'analyse de données avec Microsoft Excel — nettoyage, exploration et
+                        visualisation de jeux de données pour en extraire des insights exploitables.
+                    </p>
+
+                    <div class="certification__skills">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Analyse de données</span>
+                        <span class="skill-tag">Data Cleaning</span>
                     </div>
                 </div>
 
@@ -825,7 +644,7 @@
 
                     <p class="certification__description">
                         Formation en UX/UI Design centrée sur les méthodes de conception ergonomique,
-                        la recherche utilisateur, le prototypage, les tests et la création d’interfaces modernes.
+                        la recherche utilisateur, le prototypage, les tests et la création d'interfaces modernes.
                     </p>
 
                     <div class="certification__skills">
@@ -858,7 +677,7 @@
 
                     <p class="certification__description">
                         Formation en Gestion de Projets Agiles Scrum portant sur les rôles, les rituels,
-                        la planification, la gestion d’équipe et l’utilisation du framework Scrum dans les projets
+                        la planification, la gestion d'équipe et l'utilisation du framework Scrum dans les projets
                         réels.
                     </p>
 
@@ -905,11 +724,11 @@
                 </div>
 
 
-                <!-- Certifications - Atelier "Des Ateliers Dans l’Eau"-->
+                <!-- Certifications - Atelier "Des Ateliers Dans l'Eau"-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
-                            <h3 class="certification__title">Atelier "Des Ateliers Dans l’Eau"</h3>
+                            <h3 class="certification__title">Atelier "Des Ateliers Dans l'Eau"</h3>
                             <p class="certification__issuer">Orange Digital Center</p>
                         </div>
                         <div class="certification__right">
@@ -924,11 +743,11 @@
                     </div>
 
                     <p class="certification__description">
-                        Participation à l’atelier de co-construction intitulé <strong>“Des Ateliers Dans
-                            l’Eau”</strong>,
-                        organisé au sein d’Orange Digital Center et portant sur l’innovation,
+                        Participation à l'atelier de co-construction intitulé <strong>"Des Ateliers Dans
+                            l'Eau"</strong>,
+                        organisé au sein d'Orange Digital Center et portant sur l'innovation,
                         la conception collaborative et la création de solutions technologiques liées à la gestion de
-                        l’eau.
+                        l'eau.
                     </p>
 
                     <div class="certification__skills">
@@ -995,7 +814,7 @@
 
                     <p class="certification__description">
                         Participation à la formation intensive en ReactJS organisée par Orange Digital Center,
-                        incluant les concepts avancés : composants, hooks, gestion d’état et bonnes pratiques.
+                        incluant les concepts avancés : composants, hooks, gestion d'état et bonnes pratiques.
                     </p>
 
                     <div class="certification__skills">
@@ -1005,6 +824,42 @@
                     </div>
                 </div>
             </div>
+    </div>
+    </section>
+
+
+    <!--===== DISTINCTIONS =====-->
+    <section class="distinctions section" id="distinctions">
+        <div class="container">
+            <h2 class="section-title">Prix & Distinctions</h2>
+
+            <div class="leadership__container">
+                <div class="leadership__item">
+                    <div class="leadership__icon">
+                        <i class='bx bx-trophy'></i>
+                    </div>
+                    <div class="leadership__content">
+                        <div class="leadership__header">
+                            <div>
+                                <h3 class="leadership__title">1er Prix, Concours Étudiants Entrepreneurs</h3>
+                                <p class="leadership__organization">Maison de l'Entrepreneuriat, Université Kofi Annan de Guinée</p>
+                            </div>
+                            <span class="leadership__period">2025</span>
+                        </div>
+                        <p class="leadership__description">
+                            Conception de l'expérience UX/UI de <strong><a href="https://healthsecure.app" target="_blank" rel="noopener noreferrer">HealthSecure</a></strong>, solution de santé connectée
+                            permettant de surveiller les patients en temps réel (24h/24, 7j/7), en équipe de 5.
+                            Rôle : UX/UI Designer.
+                        </p>
+                        <ul class="leadership__achievements">
+                            <li>1ère place sur l'ensemble des projets présentés au concours</li>
+                            <li>Conception complète de l'expérience utilisateur (UX/UI)</li>
+                            <li>Objectif : contribuer à sauver des vies grâce à l'innovation technologique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -1020,9 +875,13 @@
                         <i class='bx bx-building'></i>
                     </div>
                     <div class="leadership__content">
-                        <h3 class="leadership__title">Fondateur & Directeur Général</h3>
-                        <p class="leadership__organization">Fabisi TECH</p>
-                        <span class="leadership__period">2022 - Présent</span>
+                        <div class="leadership__header">
+                            <div>
+                                <h3 class="leadership__title">Fondateur & Directeur Général</h3>
+                                <p class="leadership__organization">Fabisi TECH</p>
+                            </div>
+                            <span class="leadership__period">2022 - Présent</span>
+                        </div>
                         <p class="leadership__description">
                             Création et direction d'une entreprise technologique spécialisée dans la vente des matériels
                             informatiques et le développement
@@ -1042,18 +901,22 @@
                         <i class='bx bx-group'></i>
                     </div>
                     <div class="leadership__content">
-                        <h3 class="leadership__title">Président</h3>
-                        <p class="leadership__organization">AJEPK - Association des Jeunes pour l'Education Primaire de
-                            Kankalabé</p>
-                        <span class="leadership__period">2025 - Présent</span>
+                        <div class="leadership__header">
+                            <div>
+                                <h3 class="leadership__title">Président</h3>
+                                <p class="leadership__organization">AJEPK - Association des Jeunes pour l'Education Primaire de
+                                    Kankalabé</p>
+                            </div>
+                            <span class="leadership__period">2025 - Présent</span>
+                        </div>
                         <p class="leadership__description">
                             Direction d'une association œuvrant pour l'amélioration de l'éducation primaire
                             dans la sous-préfecture de Kankalabé.
                         </p>
                         <ul class="leadership__achievements">
-                            <li>Organisation de campagnes de sensibilisation à l'éducation</li>
-                            <li>Distribution de fournitures scolaires à 100+ élèves</li>
-                            <li>Mobilisation de la communauté pour la rénovation d'écoles</li>
+                          <li>Organisation de campagnes de sensibilisation à l'éducation et appui aux enseignants et établissements scolaires primaires.</li>
+                          <li>Distribution de kits scolaires complets à plus de 70 enfants en petite section de maternelle durant l'année scolaire 2025-2026.</li>
+                          <li>Mobilisation de la communauté et coordination d'une équipe de bénévoles pour soutenir la rénovation des écoles primaires.</li>
                         </ul>
                     </div>
                 </div>
@@ -1064,10 +927,14 @@
                         <i class='bx bx-book'></i>
                     </div>
                     <div class="leadership__content">
-                        <h3 class="leadership__title">Secrétaire Technique</h3>
-                        <p class="leadership__organization">ASEEP - Association des Étudiants de l'École Polytechnique
-                            de l'Université Kofi Annan de Guinée</p>
-                        <span class="leadership__period">2024 - Présent</span>
+                        <div class="leadership__header">
+                            <div>
+                                <h3 class="leadership__title">Secrétaire Technique</h3>
+                                <p class="leadership__organization">ASEEP - Association des Étudiants de l'École Polytechnique
+                                    de l'Université Kofi Annan de Guinée</p>
+                            </div>
+                            <span class="leadership__period">Déc. 2024 - Déc. 2025</span>
+                        </div>
                         <p class="leadership__description">
                             Gestion des aspects techniques et numériques de l'association étudiante,
                             incluant le développement de plateformes et outils de communication.
@@ -1086,9 +953,13 @@
                         <i class='bx bx-chip'></i>
                     </div>
                     <div class="leadership__content">
-                        <h3 class="leadership__title">Membre Équipe Technologique</h3>
-                        <p class="leadership__organization">Projet Water Cleaner Boat</p>
-                        <span class="leadership__period">2024</span>
+                        <div class="leadership__header">
+                            <div>
+                                <h3 class="leadership__title">Membre Équipe Technologique</h3>
+                                <p class="leadership__organization">Projet Water Cleaner Boat</p>
+                            </div>
+                            <span class="leadership__period">2024</span>
+                        </div>
                         <p class="leadership__description">
                             Contribution au développement technologique d'un bateau nettoyeur autonome
                             pour la dépollution des plans d'eau.
@@ -1111,7 +982,7 @@
             <h2 class="section-title">Contactez-Moi</h2>
 
             <div class="contact__container">
-                <form class="contact__form" id="contact-form">
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/mrpzaawe" method="POST">
                     <div class="form-group">
                         <label for="name">Nom Complet *</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
@@ -1133,6 +1004,9 @@
                             required></textarea>
                     </div>
 
+                    <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
                     <button type="submit" class="btn btn-primary">
                         <i class='bx bx-send'></i>
                         Envoyer le Message
@@ -1149,7 +1023,7 @@
                 <div>
                     <h3 class="footer__title">Boubacar SIDIBE</h3>
                     <p class="footer__text">
-                        Étudiant Ingénieur en Génie Informatique passionné par l'innovation et les nouvelles
+                        Ingénieur d'État en Génie Informatique passionné par l'innovation et les nouvelles
                         technologies.
                     </p>
                     <div class="footer__social">
@@ -1161,10 +1035,6 @@
                             rel="noopener noreferrer" aria-label="GitHub">
                             <i class='bx bxl-github'></i>
                         </a>
-                        <!--<a href="https://twitter.com/votre-username" class="footer__link" target="_blank"
-                            rel="noopener noreferrer" aria-label="Twitter">
-                            <i class='bx bxl-twitter'></i>
-                        </a> -->
                         <a href="mailto:elabubakr1161@gmail.com" class="footer__link" aria-label="Email">
                             <i class='bx bx-envelope'></i>
                         </a>
@@ -1197,11 +1067,10 @@
             </div>
 
             <p class="footer__copy">
-                &copy; 2025 Boubacar SIDIBE || Fabisi TECH. Tous droits réservés.
+                &copy; 2026 Boubacar SIDIBE || Fabisi TECH. Tous droits réservés.
             </p>
         </div>
     </footer>
-
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
