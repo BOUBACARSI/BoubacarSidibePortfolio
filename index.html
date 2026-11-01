@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Boubacar SIDIBE - Ingénieur d'État en Génie Informatique">
-    <meta name="keywords" content="portfolio, ingénieur, développeur, web, Guinée">
+    <meta name="description" content="Portfolio de Boubacar SIDIBE : ingénieur en Génie Informatique (Développement Logiciel), développeur web et mobile, Conakry, Guinée.">
+    <meta name="keywords" content="portfolio, ingénieur, développeur web, développeur mobile, Next.js, React Native, Guinée">
     <meta name="author" content="Boubacar SIDIBE">
-    <title>Boubacar SIDIBE | Ingénieur d'État en Génie Informatique</title>
+    <meta name="theme-color" content="#0A0A0A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boubacar SIDIBE | Génie Informatique, développeur web et mobile">
+    <meta property="og:description" content="Ingénieur en Génie Informatique (Développement Logiciel), développeur web et mobile. Projets, expériences et parcours.">
+    <meta property="og:locale" content="fr_FR">
+    <title>Boubacar SIDIBE | Génie Informatique, développeur web et mobile</title>
 
-    <!-- Box Icons -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
 
-    <!-- Font Awesome -->
+    <!-- Icônes -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Favicon -->
@@ -21,24 +29,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <!-- Styles CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#about">Aller au contenu</a>
+
     <!--===== HEADER =====-->
     <header class="header">
-        <nav class="nav container">
+        <nav class="nav container" aria-label="Navigation principale">
             <a href="#home" class="nav__logo">SIDIBE</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#formation" class="nav__link">Formation</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
                     <li class="nav__item"><a href="#experience" class="nav__link">Expériences</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
                     <li class="nav__item nav__item--dropdown">
-                        <a href="#certifications" class="nav__link nav__link--dropdown">
+                        <a href="#certifications" class="nav__link nav__link--dropdown" aria-haspopup="true">
                             Parcours
                             <i class='bx bx-chevron-down nav__dropdown-icon'></i>
                         </a>
@@ -53,35 +64,38 @@
             </div>
 
             <div class="nav__actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <i class='bx bx-moon'></i>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Changer de thème">
+                    <i class='bx bx-sun'></i>
                 </button>
-                <div class="nav__toggle" id="nav-toggle">
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu"
+                    aria-expanded="false" aria-controls="nav-menu">
                     <i class='bx bx-menu'></i>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
 
+    <main>
     <!--===== HERO =====-->
     <section class="hero section" id="home">
         <div class="hero__container container">
             <div class="hero__content">
-                <p class="hero__greeting">👋 Salut, je suis</p>
+                <p class="hero__greeting">Bonjour, je suis</p>
                 <h1 class="hero__title"><span>Boubacar SIDIBE</span></h1>
-                <p class="hero__subtitle">Ingénieur d'État en Génie Informatique & Développeur Web
-                </p>
+                <p class="hero__subtitle">Ingénieur en Génie Informatique, Développement Logiciel<br>Développeur web et mobile</p>
                 <p class="hero__description">
-                    Diplômé de l'École Polytechnique des Ingénieurs de l'Université
-                    Kofi Annan de Guinée, spécialité Développement Logiciel. Passionné par le développement web, le design UX/UI, l'intelligence
-                    artificielle, l'analyse et la science des données, et les nouvelles technologies.
+                    Je conçois des applications web et mobiles, de l'interface à la base de données, adaptées au
+                    contexte local : plateformes de livraison, applications hors connexion, outils éducatifs.
                 </p>
-
+                <p class="hero__status">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                    Stagiaire Informaticien Développeur au CTSP-RFP, Ministère de l'Économie, des Finances et du Budget
+                </p>
 
                 <div class="hero__buttons">
                     <a href="mailto:elabubakr1161@gmail.com" class="btn btn-primary">
                         <i class='bx bx-envelope'></i>
-                        Contactez-Moi
+                        Me contacter
                     </a>
                     <a href="assets/cv/mon-cv.pdf" class="btn btn-outline" download>
                         <i class='bx bx-download'></i>
@@ -91,15 +105,15 @@
 
                 <div class="hero__social">
                     <a href="https://www.linkedin.com/in/boubacar-sidibe" class="social-link" title="LinkedIn"
-                        target="_blank" rel="noopener noreferrer">
+                        aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <i class='bx bxl-linkedin'></i>
                     </a>
-                    <a href="https://github.com/BOUBACARSI" class="social-link" title="GitHub" target="_blank"
-                        rel="noopener noreferrer">
+                    <a href="https://github.com/BOUBACARSI" class="social-link" title="GitHub" aria-label="GitHub"
+                        target="_blank" rel="noopener noreferrer">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a href="https://wa.me/224624013003" class="social-link" title="WhatsApp" target="_blank"
-                        rel="noopener noreferrer">
+                    <a href="https://wa.me/224624013003" class="social-link" title="WhatsApp" aria-label="WhatsApp"
+                        target="_blank" rel="noopener noreferrer">
                         <i class='bx bxl-whatsapp'></i>
                     </a>
                 </div>
@@ -108,7 +122,7 @@
             <div class="hero__image">
                 <div class="hero__img-wrapper">
                     <div class="hero__img-bg"></div>
-                    <img src="assets/img/profile.jpg" alt="Photo de profil de Votre Nom" class="hero__img">
+                    <img src="assets/img/profile.jpg" alt="Portrait de Boubacar SIDIBE" class="hero__img">
                 </div>
             </div>
         </div>
@@ -117,39 +131,36 @@
     <!--===== ABOUT =====-->
     <section class="about section" id="about">
         <div class="container">
-            <h2 class="section-title">À Propos de Moi</h2>
+            <h2 class="section-title">À propos</h2>
 
             <div class="about__container">
                 <div class="about__img">
-                    <img src="assets/img/about.jpeg" alt="Boubacar SIDIBE">
+                    <img src="assets/img/about.jpeg" alt="Boubacar SIDIBE" loading="lazy">
                 </div>
 
                 <div class="about__content">
-                    <h3>Je suis Ingénieur d'État en Génie Informatique</h3>
+                    <h3>Ingénieur en Génie Informatique</h3>
                     <p class="about__text">
-                        Diplômé de l'École Polytechnique de l'Université Kofi
-                        Annan de Guinée, spécialisé en Développement Logiciel (mémoire soutenu le 29/06/2026). Passionné par le développement web, le design UX/UI,
-                        l'intelligence artificielle, l'analyse et la science des données
-                        et l'innovation technologique.
+                        Spécialisé en Développement Logiciel à l'École Polytechnique des Ingénieurs de l'Université
+                        Kofi Annan de Guinée, je conçois des applications web et mobiles utiles et robustes :
+                        plateformes en ligne, applications Android hors connexion, interfaces soignées.
                     </p>
                     <p class="about__text">
-                        Mon parcours académique m'a permis d'acquérir des compétences solides en programmation,
-                        en gestion de projets Agile/Scrum et en résolution de problèmes complexes. Je suis constamment à
-                        la recherche
-                        de nouvelles opportunités pour apprendre, créer et évoluer professionnellement.
+                        Mes projets partent de besoins concrets en Guinée : livraison urbaine, gestion du crédit des
+                        petits commerçants, accès à la formation. Je travaille en méthode Agile/Scrum, et j'ai fondé
+                        une activité de services informatiques ainsi qu'une association éducative.
                     </p>
-
 
                     <div class="about__info">
                         <div class="info-box">
                             <i class='bx bx-briefcase'></i>
                             <h4>9+</h4>
-                            <span>Projets Réalisés</span>
+                            <span>Projets réalisés</span>
                         </div>
                         <div class="info-box">
                             <i class='bx bx-award'></i>
-                            <h4>7+</h4>
-                            <span>Attestations</span>
+                            <h4>8</h4>
+                            <span>Attestations et formations</span>
                         </div>
                         <div class="info-box">
                             <i class='bx bx-code-alt'></i>
@@ -162,137 +173,209 @@
         </div>
     </section>
 
+    <!--===== FORMATION =====-->
+    <section class="formation section" id="formation">
+        <div class="container">
+            <h2 class="section-title">Formation</h2>
+
+            <div class="formation__container">
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Ingénieur d'État en Génie Informatique, Développement Logiciel</h3>
+                            <p class="experience__company">Université Kofi Annan de Guinée, École Polytechnique des Ingénieurs</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">Nov. 2021 – Juin 2026</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Mémoire soutenu le 29/06/2026 : plateforme web multi-acteurs pour la digitalisation de la livraison urbaine à Conakry (GnDelivery)</li>
+                        <li>Admis au diplôme d'Ingénieur d'État, délivrance prévue le 14/11/2026</li>
+                        <li>3<sup>e</sup> année : 15,64/20, 2<sup>e</sup> sur 25 &middot; 4<sup>e</sup> année : 16,27/20, 1<sup>er</sup> sur 22 &middot; 5<sup>e</sup> année : 16,40/20, 1<sup>er</sup> sur 18</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="tag">Génie logiciel</span>
+                        <span class="tag">Bases de données</span>
+                        <span class="tag">Systèmes distribués et embarqués</span>
+                        <span class="tag">Systèmes mobiles et Android</span>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Baccalauréat Unique, Sciences Mathématiques</h3>
+                            <p class="experience__company">Groupe Scolaire Icône d'Afrique</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">2020 – 2021</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--===== PROJECTS =====-->
     <section class="projects section" id="projects">
         <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
+            <h2 class="section-title">Projets</h2>
 
             <div class="projects__container">
 
-                <!-- Projet GnDelivery -->
-                <div class="project-card">
-                    <img src="assets/img/projects/gndelivery.PNG" alt="GnDelivery" class="project-card__img">
-
+                <!-- GnDelivery -->
+                <article class="project-card">
+                    <img src="assets/img/projects/gndelivery.PNG" alt="Capture de GnDelivery" class="project-card__img" loading="lazy">
                     <div class="project-card__content">
-                        <h3 class="project-card__title">GnDelivery</h3>
-
+                        <h3 class="project-card__title">GnDelivery <span class="project-card__badge">Mémoire</span></h3>
                         <p class="project-card__description">
-                            GnDelivery est une plateforme web de livraison urbaine à Conakry mettant en relation
-                            clients, commerçants et livreurs. Elle permet la gestion des commandes, le suivi en
-                            temps réel des livraisons, la messagerie entre acteurs et une expérience optimisée
-                            pour Orange/Mobile money et le contexte local guinéen.
+                            Plateforme web de livraison urbaine à Conakry mettant en relation clients, commerçants et
+                            livreurs : gestion des commandes, suivi en temps réel, messagerie, assistant
+                            conversationnel et paiement adapté au contexte local (Orange Money, Mobile Money).
+                            Évaluée par des tests fonctionnels, des mesures de performance et une enquête de
+                            satisfaction.
                         </p>
-
                         <div class="project-card__tags">
                             <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
                             <span class="tag">Tailwind CSS</span>
-                            <span class="tag">Neon Postgres</span>
+                            <span class="tag">PostgreSQL</span>
                             <span class="tag">Drizzle ORM</span>
+                            <span class="tag">NextAuth.js</span>
                         </div>
-
                         <div class="project-card__links">
                             <a href="https://godelivery.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class='bx bx-link-external'></i> Demo
+                                <i class='bx bx-link-external'></i> Démo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Projet Kof-IA -->
-                <div class="project-card">
-                    <img src="assets/img/projects/kofia.PNG" alt="Kof-IA Platform" class="project-card__img">
+                <!-- Jikke -->
+                <article class="project-card">
+                    <img src="assets/img/projects/jikke.PNG" alt="Capture de Jikke" class="project-card__img" loading="lazy">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Jikke <span class="project-card__badge project-card__badge--wip">V1 en test</span></h3>
+                        <p class="project-card__description">
+                            Application Android qui remplace le cahier de crédit des petits commerçants guinéens. Elle
+                            fonctionne sans internet, est protégée par un code secret et existe en français, soussou,
+                            malinké et pular. La première version (APK) est testée par plus de dix utilisateurs ;
+                            la publication sur le Play Store est en préparation.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Supabase</span>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- Kof-IA -->
+                <article class="project-card">
+                    <img src="assets/img/projects/kofia.PNG" alt="Capture de Kof-IA Academy" class="project-card__img" loading="lazy">
                     <div class="project-card__content">
                         <h3 class="project-card__title">Kof-IA Academy</h3>
-
                         <p class="project-card__description">
-                            Plateforme d'apprentissage en ligne basée sur l'IA, développée avec Next.js.
-                            Elle propose des cours vidéo, un tableau de bord administrateur, des recommandations
-                            intelligentes
-                            et une interface moderne optimisée pour l'éducation numérique.
+                            Plateforme d'apprentissage en ligne développée seul : cours vidéo, tableau de bord
+                            d'administration et recommandations personnalisées.
                         </p>
-
                         <div class="project-card__tags">
                             <span class="tag">Next.js</span>
                             <span class="tag">React</span>
                             <span class="tag">Clerk</span>
-                            <span class="tag">Neon DB</span>
+                            <span class="tag">PostgreSQL</span>
                             <span class="tag">Drizzle ORM</span>
-                            <span class="tag">TailwindCSS</span>
+                            <span class="tag">Tailwind CSS</span>
                         </div>
-
                         <div class="project-card__links">
-                            <a href="https://kofia-learning-platform.vercel.app" class="project-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class='bx bx-link-external'></i> Demo
+                            <a href="https://kofia-learning-platform.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i> Démo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Projet MoulaBox-ASEEP -->
-                <div class="project-card">
-                    <img src="assets/img/projects/moulabox.PNG" alt="MoulaBox-ASEEP" class="project-card__img">
-
+                <!-- MoulaBox -->
+                <article class="project-card">
+                    <img src="assets/img/projects/moulabox.PNG" alt="Capture de MoulaBox-ASEEP" class="project-card__img" loading="lazy">
                     <div class="project-card__content">
                         <h3 class="project-card__title">MoulaBox-ASEEP</h3>
-
                         <p class="project-card__description">
-                            Plateforme collaborative de gestion d'idées développée pour l'ASEEP.
-                            Elle permet de proposer, voter, commenter et suivre l'évolution
-                            des initiatives au sein de l'association.
-                            Projet réalisé en équipe par la Commission Tech, où j'étais chargé
-                            de concevoir et développer toute la partie Frontend.
+                            Plateforme collaborative de gestion d'idées de l'association des étudiants de l'école :
+                            proposer, voter, commenter et suivre les initiatives. Projet réalisé en équipe par la
+                            Commission Tech ; j'ai conçu et développé tout le frontend.
                         </p>
-
                         <div class="project-card__tags">
                             <span class="tag">Next.js 14</span>
                             <span class="tag">TypeScript</span>
                             <span class="tag">Prisma</span>
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">NextAuth.js</span>
-                            <span class="tag">Vercel Blob</span>
-                            <span class="tag">TailwindCSS</span>
+                            <span class="tag">Tailwind CSS</span>
                         </div>
-
                         <div class="project-card__links">
-                            <a href="https://aseepukag.vercel.app/" class="project-link" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class='bx bx-link-external'></i> Demo
+                            <a href="https://aseepukag.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i> Démo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Projet Fabisi TECH -->
-                <div class="project-card">
-                    <img src="assets/img/projects/fabisitech.PNG" alt="Fabisi TECH" class="project-card__img">
+                <!-- StageGn -->
+                <article class="project-card">
+                    <img src="assets/img/projects/stagegn.PNG" alt="Capture de StageGn" class="project-card__img" loading="lazy">
                     <div class="project-card__content">
-                        <h3 class="project-card__title">Fabisi TECH</h3>
+                        <h3 class="project-card__title">StageGn <span class="project-card__badge project-card__badge--wip">En développement</span></h3>
                         <p class="project-card__description">
-                            Plateforme de vente en ligne pour ordinateurs et accessoires, intégrant panier, paiement
+                            Plateforme de candidature aux stages étudiants en Guinée, qui met en relation étudiants
+                            et entreprises. Projet en cours de développement.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Drizzle ORM</span>
+                            <span class="tag">NextAuth.js</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://stagegn.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i> Démo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Fabisi TECH -->
+                <article class="project-card">
+                    <img src="assets/img/projects/fabisitech.PNG" alt="Capture du site Fabisi TECH" class="project-card__img" loading="lazy">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Fabisi TECH, boutique en ligne</h3>
+                        <p class="project-card__description">
+                            Plateforme de vente en ligne d'ordinateurs et d'accessoires, avec panier, paiement
                             sécurisé et gestion complète des commandes.
                         </p>
-
                         <div class="project-card__tags">
                             <span class="tag">Laravel</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">Livraison sur place</span>
                         </div>
-                        <div class="project-card__links">
-                        </div>
                     </div>
-                </div>
+                </article>
 
             </div>
 
-            <!-- Bandeau Autres projets -->
+            <!-- Autres projets -->
             <div class="projects__more">
                 <div class="projects__more-text">
-                    <h3>+ 5 autres projets</h3>
-                    <p>Kankalabé FiFow, Fabisi e-Edu, Système de Distribution de Santé, Système de Gestion des Notes,
-                        Gestion d'Hébergement Étudiant — code source disponible sur GitHub.</p>
+                    <h3>Et d'autres projets</h3>
+                    <p>Kankalabé FiFow, Fabisi e-Edu, Système de distribution de santé, Système de gestion des notes,
+                        Gestion d'hébergement étudiant : code source disponible sur GitHub.</p>
                 </div>
                 <a href="https://github.com/BOUBACARSI" class="project-link project-link--more" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-github'></i> Voir sur GitHub
@@ -304,58 +387,127 @@
     <!--===== EXPERIENCE =====-->
     <section class="experience section" id="experience">
         <div class="container">
-            <h2 class="section-title">Expériences Professionnelles</h2>
+            <h2 class="section-title">Expériences professionnelles</h2>
 
             <div class="experience__container">
-        <!-- Expérience - Tulip Industries (contenu inchangé) -->
-        <div class="experience__item">
-            <div class="experience__header">
-                <div class="experience__left">
-                    <h3 class="experience__title">Stagiaire Développeur Web</h3>
-                    <p class="experience__company">Tulip Industries</p>
-                </div>
-                <div class="experience__right">
-                    <span class="experience__date">Avr. - Juil. 2026</span>
-                    <span class="experience__location">Conakry, Guinée</span>
-                </div>
-            </div>
 
-            <ul class="experience__description">
-                <li>Participation au développement d'applications web modernes</li>
-                <li>Intégration d'interfaces utilisateurs avec React / Next.js</li>
-                <li>Collaboration avec l'équipe technique sur des projets réels</li>
-                <li>Optimisation des performances et amélioration de l'UX</li>
-            </ul>
-
-            <div class="experience__tags">
-                <span class="tag">React</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Tailwind CSS</span>
-                <span class="tag">UI/UX</span>
-                <span class="tag">Git</span>
-            </div>
-        </div>
-
-                <!-- Expérience - Fabisi TECH -->
+                <!-- CTSP-RFP -->
                 <div class="experience__item">
                     <div class="experience__header">
                         <div class="experience__left">
-                            <h3 class="experience__title">Fondateur & Développeur Full Stack</h3>
-                            <p class="experience__company">Fabisi TECH</p>
+                            <h3 class="experience__title">Stagiaire Informaticien Développeur</h3>
+                            <p class="experience__company">CTSP-RFP, Ministère de l'Économie, des Finances et du Budget</p>
                         </div>
                         <div class="experience__right">
-                            <span class="experience__date">2022 - Présent</span>
+                            <span class="experience__date">Oct. 2026 – Mars 2027</span>
                             <span class="experience__location">Conakry, Guinée</span>
                         </div>
                     </div>
                     <ul class="experience__description">
-                        <li>Création et gestion de Fabisi TECH, une entreprise de services informatiques</li>
-                        <li>Vente de matériel informatique (ordinateurs, accessoires, autres)</li>
-                        <li>Développement de solutions innovantes pour clients locaux</li>
-                        <li>Développement Full Stack de plateformes web et e-commerce</li>
-                        <li>Gestion de projets techniques et coordination d'équipe</li>
+                        <li>Développement d'applications internes</li>
+                        <li>Gestion et amélioration continue d'e-PREF, plateforme officielle de suivi des programmes économiques et de la réforme des finances publiques</li>
+                        <li>Support technique informatique</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="tag">Développement d'applications</span>
+                        <span class="tag">e-PREF</span>
+                        <span class="tag">Support technique</span>
+                    </div>
+                </div>
+
+                <!-- Tulip Industries -->
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Stagiaire Développeur Frontend</h3>
+                            <p class="experience__company">Tulip Industries</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">Avr. – Juil. 2026</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Développement d'interfaces React / Next.js et intégration d'APIs</li>
+                        <li>Collaboration avec l'équipe technique sur des projets réels</li>
+                        <li>Optimisation des performances et amélioration de l'UX</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- MoulaBox - ASEEP -->
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Développeur Frontend</h3>
+                            <p class="experience__company">MoulaBox-ASEEP</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">2025</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Conception et réalisation de tout le frontend de la plateforme collaborative de gestion d'idées de l'ASEEP</li>
+                        <li>Travail en équipe avec la Commission Tech en méthodologie Agile</li>
+                        <li>Déploiement sur Vercel, authentification avec NextAuth.js</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="tag">Next.js 14</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">NextAuth.js</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                </div>
+
+                <!-- Orange Guinée -->
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Stagiaire en Informatique</h3>
+                            <p class="experience__company">Orange Guinée, Communication Institutionnelle et RSE</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">Sep. – Oct. 2024</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Support informatique et maintenance des systèmes</li>
+                        <li>Assistance technique interne</li>
+                        <li>Contribution au projet Water Cleaner Boat : prototype d'application web (non déployé) et intégration de capteurs environnementaux</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="tag">Support informatique</span>
+                        <span class="tag">Maintenance</span>
+                        <span class="tag">Capteurs</span>
+                    </div>
+                </div>
+
+                <!-- Fabisi TECH -->
+                <div class="experience__item">
+                    <div class="experience__header">
+                        <div class="experience__left">
+                            <h3 class="experience__title">Fondateur</h3>
+                            <p class="experience__company">Fabisi TECH</p>
+                        </div>
+                        <div class="experience__right">
+                            <span class="experience__date">Sep. 2022 – Présent</span>
+                            <span class="experience__location">Conakry, Guinée</span>
+                        </div>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Services informatiques : solutions web et vente de matériel informatique</li>
+                        <li>Équipe de trois développeurs ; clients dont CAS-MARKET (marketplace) ; partenariat avec l'ASEEP</li>
+                        <li>Formalisation juridique en cours</li>
                     </ul>
                     <div class="experience__tags">
                         <span class="tag">Laravel</span>
@@ -366,67 +518,6 @@
                     </div>
                 </div>
 
-
-                <!-- Expérience - MoulaBox - ASEEP -->
-                <div class="experience__item">
-                    <div class="experience__header">
-                        <div class="experience__left">
-                            <h3 class="experience__title">Développeur Frontend</h3>
-                            <p class="experience__company">MoulaBox - ASEEP</p>
-                        </div>
-                        <div class="experience__right">
-                            <span class="experience__date">2025</span>
-                            <span class="experience__location">Conakry, Guinée</span>
-                        </div>
-                    </div>
-
-                    <ul class="experience__description">
-                        <li>Développement de la plateforme collaborative de gestion d'idées pour l'ASEEP</li>
-                        <li>Conception et réalisation de toute la partie Frontend</li>
-                        <li>Travail en équipe avec la Commission Tech en méthodologie Agile</li>
-                        <li>Fonctionnalités : proposer, voter, commenter et suivre l'évolution des initiatives</li>
-                        <li>Déploiement et hébergement sur Vercel avec gestion des authentifications via NextAuth.js
-                        </li>
-                    </ul>
-
-                    <div class="experience__tags">
-                        <span class="tag">Next.js 14</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Prisma</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">NextAuth.js</span>
-                        <span class="tag">Vercel</span>
-                        <span class="tag">TailwindCSS</span>
-                    </div>
-                </div>
-
-                <!-- Expérience 2 -->
-                <div class="experience__item">
-                    <div class="experience__header">
-                        <div class="experience__left">
-                            <h3 class="experience__title">Stagiaire en Informatique</h3>
-                            <p class="experience__company">Orange Guinée - Orange Digital Center</p>
-                        </div>
-                        <div class="experience__right">
-                            <span class="experience__date">Sep. – Oct. 2024</span>
-                            <span class="experience__location">Conakry, Guinée</span>
-                        </div>
-                    </div>
-
-                    <ul class="experience__description">
-                        <li>Maintenance et suivi des systèmes informatiques</li>
-                        <li>Assistance technique interne</li>
-                        <li>Gestion de bases de données</li>
-                    </ul>
-
-                    <div class="experience__tags">
-                        <span class="tag">IT Support</span>
-                        <span class="tag">Maintenance</span>
-                        <span class="tag">Bases de données</span>
-                        <span class="tag">Assistance technique</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -434,120 +525,65 @@
     <!--===== SKILLS =====-->
     <section class="skills section" id="skills">
         <div class="container">
-            <h2 class="section-title">Mes Compétences</h2>
+            <h2 class="section-title">Compétences</h2>
 
             <div class="skills__container">
                 <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <i class='bx bx-code-alt'></i>
-                    </div>
-                    <h3>Frontend Development</h3>
+                    <div class="skill-card__icon"><i class='bx bx-code-alt'></i></div>
+                    <h3>Frontend</h3>
                     <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Next.js</li>
-                        <li>Responsive Design</li>
-                        <li>Bootstrap & Tailwind</li>
+                        <li>HTML5 et CSS3</li>
+                        <li>JavaScript et TypeScript</li>
+                        <li>React.js et Next.js</li>
+                        <li>Tailwind CSS et Bootstrap</li>
+                        <li>Design responsive</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <i class='bx bx-server'></i>
-                    </div>
-                    <h3>Backend Development</h3>
+                    <div class="skill-card__icon"><i class='bx bx-server'></i></div>
+                    <h3>Backend et données</h3>
                     <ul class="skill-list">
-                        <li>Node.js & Express</li>
+                        <li>Node.js</li>
+                        <li>PHP et Laravel</li>
                         <li>Python</li>
-                        <li>PHP & Laravel</li>
-                        <li>MySQL & Oracle</li>
-                        <li>SQLite, Postgre</li>
-                        <li>API REST</li>
-                        <li>Authentication & Security</li>
+                        <li>PostgreSQL, MySQL, Oracle, SQLite</li>
+                        <li>API REST, authentification</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <i class='bx bx-mobile'></i>
-                    </div>
-                    <h3>Mobile & Autres</h3>
+                    <div class="skill-card__icon"><i class='bx bx-mobile'></i></div>
+                    <h3>Mobile, design et méthodes</h3>
                     <ul class="skill-list">
-                        <li>Docker</li>
-                        <li>Flutter</li>
-                        <li>Git & GitHub</li>
-                        <li>Agile/Scrum</li>
+                        <li>React Native et Expo (Android)</li>
+                        <li>Figma (UX/UI)</li>
+                        <li>Git et GitHub, Docker</li>
+                        <li>Agile / Scrum</li>
                     </ul>
                 </div>
-
             </div>
-        </div>
 
-
-        <!-- Stack Visuelle mixte -->
-        <div class="tech-stack">
-            <h3 class="tech-stack__title">Stack Technique</h3>
-            <div class="tech-stack__container">
-                <div class="tech-item">
-                    <i class='bx bxl-html5' style="color: #E34F26;"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bxl-css3' style="color: #1572B6;"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bxl-javascript' style="color: #F7DF1E;"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bxl-react' style="color: #61DAFB;"></i>
-                    <span>React</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bx-layer' style="color: #000000;"></i>
-                    <span>Next.js</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bxl-nodejs' style="color: #339933;"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-python" style="color: #3776AB;"></i>
-                    <span>Python</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-php" style="color: #777BB4;"></i>
-                    <span>PHP</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-laravel" style="color: #FF2D20;"></i>
-                    <span>Laravel</span>
-                </div>
-                <div class="tech-item">
-                    <i class='bx bxl-git' style="color: #F05032;"></i>
-                    <span>Git</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-database" style="color: #00758F;"></i>
-                    <span>MySQL</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-database" style="color: #336791;"></i>
-                    <span>PostgreSQL</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-database" style="color: #F80000;"></i>
-                    <span>Oracle</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-aws" style="color: #f9a301;"></i>
-                    <span>AWS(EC2/S3)</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-docker" style="color: #2496ED;"></i>
-                    <span>Docker</span>
+            <!-- Stack technique -->
+            <div class="tech-stack">
+                <h3 class="tech-stack__title">Stack technique</h3>
+                <div class="tech-stack__container">
+                    <div class="tech-item"><i class='bx bxl-html5' style="color: #E34F26;"></i><span>HTML5</span></div>
+                    <div class="tech-item"><i class='bx bxl-css3' style="color: #1572B6;"></i><span>CSS3</span></div>
+                    <div class="tech-item"><i class='bx bxl-javascript' style="color: #F7DF1E;"></i><span>JavaScript</span></div>
+                    <div class="tech-item"><i class='bx bxl-typescript' style="color: #3178C6;"></i><span>TypeScript</span></div>
+                    <div class="tech-item"><i class='bx bxl-react' style="color: #61DAFB;"></i><span>React</span></div>
+                    <div class="tech-item"><i class='bx bx-layer' style="color: #8A8A8A;"></i><span>Next.js</span></div>
+                    <div class="tech-item"><i class='bx bxl-nodejs' style="color: #339933;"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fab fa-python" style="color: #3776AB;"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="fab fa-php" style="color: #777BB4;"></i><span>PHP</span></div>
+                    <div class="tech-item"><i class="fab fa-laravel" style="color: #FF2D20;"></i><span>Laravel</span></div>
+                    <div class="tech-item"><i class='bx bxl-git' style="color: #F05032;"></i><span>Git</span></div>
+                    <div class="tech-item"><i class="fas fa-database" style="color: #00758F;"></i><span>MySQL</span></div>
+                    <div class="tech-item"><i class="fas fa-database" style="color: #336791;"></i><span>PostgreSQL</span></div>
+                    <div class="tech-item"><i class="fas fa-database" style="color: #F80000;"></i><span>Oracle</span></div>
+                    <div class="tech-item"><i class="fab fa-docker" style="color: #2496ED;"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class='bx bx-mobile-alt' style="color: #3B82F6;"></i><span>React Native</span></div>
                 </div>
             </div>
         </div>
@@ -556,75 +592,61 @@
     <!--===== CERTIFICATIONS =====-->
     <section class="certifications section" id="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications & Formations</h2>
+            <h2 class="section-title">Certifications et formations</h2>
             <div class="certifications__container">
-                <!-- Attestation - Marketing Numérique-->
+
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
                             <h3 class="certification__title">Marketing Numérique</h3>
-                            <p class="certification__issuer">Organisation Internationale de la Francophonie (OIF) -
-                                D-CLIC</p>
+                            <p class="certification__issuer">Organisation Internationale de la Francophonie (OIF), D-CLIC</p>
                         </div>
                         <div class="certification__right">
                             <span class="certification__date">Février 2026</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download"
-                                href="assets/justificatifs/attestation-marketing-numerique-oif.pdf" download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-marketing-numerique-oif.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Formation professionnalisante de 60 heures entièrement à distance (décembre 2025 à janvier
-                        2026),
+                        Formation professionnalisante de 60 heures entièrement à distance (décembre 2025 à janvier 2026),
                         axée sur la conception et la gestion de campagnes de marketing digital, la production de
-                        contenus,
-                        la planification stratégique et l'analyse des indicateurs de performance.
+                        contenus, la planification stratégique et l'analyse des indicateurs de performance.
                     </p>
-
                     <div class="certification__skills">
-                        <span class="skill-tag">Marketing Digital</span>
-                        <span class="skill-tag">Gestion de Campagne</span>
-                        <span class="skill-tag">Content Marketing</span>
-                        <span class="skill-tag">Plan d'Action</span>
+                        <span class="skill-tag">Marketing digital</span>
+                        <span class="skill-tag">Gestion de campagne</span>
+                        <span class="skill-tag">Content marketing</span>
                         <span class="skill-tag">Analyse KPI</span>
                     </div>
                 </div>
 
-                <!-- Attestation - Data Analysis Excel (Coursera) -->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
                             <h3 class="certification__title">Introduction to Data Analysis using Microsoft Excel</h3>
-                            <p class="certification__issuer">Coursera — Projet guidé (Freedom Learning Group)</p>
+                            <p class="certification__issuer">Coursera, projet guidé (Freedom Learning Group)</p>
                         </div>
                         <div class="certification__right">
                             <span class="certification__date">Septembre 2025</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download"
-                                href="https://coursera.org/verify/0VD8XS8TCMCI" target="_blank" rel="noopener noreferrer">
-                                <i class='bx bx-link-external'></i>
-                                Vérifier
+                            <a class="certification__download" href="https://coursera.org/verify/0VD8XS8TCMCI" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i> Vérifier
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Projet guidé sur l'analyse de données avec Microsoft Excel — nettoyage, exploration et
-                        visualisation de jeux de données pour en extraire des insights exploitables.
+                        Projet guidé sur l'analyse de données avec Microsoft Excel : nettoyage, exploration et
+                        visualisation de jeux de données.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">Excel</span>
                         <span class="skill-tag">Analyse de données</span>
-                        <span class="skill-tag">Data Cleaning</span>
+                        <span class="skill-tag">Nettoyage de données</span>
                     </div>
                 </div>
 
-                <!-- Attestation - UX/UI Design-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
@@ -634,64 +656,48 @@
                         <div class="certification__right">
                             <span class="certification__date">Avril 2025</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download" href="assets/justificatifs/attestation-uxui-odc.pdf"
-                                download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-uxui-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Formation en UX/UI Design centrée sur les méthodes de conception ergonomique,
-                        la recherche utilisateur, le prototypage, les tests et la création d'interfaces modernes.
+                        Formation en UX/UI Design : méthodes de conception ergonomique, recherche utilisateur,
+                        prototypage, tests et création d'interfaces modernes.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">UX Design</span>
                         <span class="skill-tag">UI Design</span>
                         <span class="skill-tag">Prototypage</span>
                         <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Design Thinking</span>
                     </div>
                 </div>
 
-
-                <!-- Attestation - Gestion de Projets Agiles - Scrum-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
-                            <h3 class="certification__title">Gestion de Projets Agiles - Scrum</h3>
+                            <h3 class="certification__title">Gestion de Projets Agiles, Scrum</h3>
                             <p class="certification__issuer">Orange Digital Center</p>
                         </div>
                         <div class="certification__right">
                             <span class="certification__date">Mars 2025</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download" href="assets/justificatifs/attestation-scrum-odc.pdf"
-                                download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-scrum-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Formation en Gestion de Projets Agiles Scrum portant sur les rôles, les rituels,
-                        la planification, la gestion d'équipe et l'utilisation du framework Scrum dans les projets
-                        réels.
+                        Formation en gestion de projets agiles : rôles, rituels, planification, gestion d'équipe et
+                        utilisation du cadre Scrum dans des projets réels.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">Scrum</span>
                         <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">Product Owner</span>
-                        <span class="skill-tag">Scrum Master</span>
-                        <span class="skill-tag">Management</span>
+                        <span class="skill-tag">Gestion d'équipe</span>
                     </div>
                 </div>
 
-
-                <!-- Attestation - WordPress-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
@@ -701,100 +707,72 @@
                         <div class="certification__right">
                             <span class="certification__date">Octobre 2024</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download" href="assets/justificatifs/attestation-wordpress-odc.pdf"
-                                download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-wordpress-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Participation à la formation en WordPress organisée par Orange Digital Center,
-                        portant sur la création, gestion et personnalisation de sites web professionnels.
+                        Formation à la création, la gestion et la personnalisation de sites web avec WordPress.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">WordPress</span>
                         <span class="skill-tag">CMS</span>
                         <span class="skill-tag">Thèmes</span>
                         <span class="skill-tag">Plugins</span>
-                        <span class="skill-tag">SEO</span>
                     </div>
                 </div>
 
-
-                <!-- Certifications - Atelier "Des Ateliers Dans l'Eau"-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
-                            <h3 class="certification__title">Atelier "Des Ateliers Dans l'Eau"</h3>
+                            <h3 class="certification__title">Atelier « Des Ateliers Dans l'Eau »</h3>
                             <p class="certification__issuer">Orange Digital Center</p>
                         </div>
                         <div class="certification__right">
                             <span class="certification__date">Septembre 2024</span>
-                            <span class="certification__badge">Certifié</span>
-                            <a class="certification__download"
-                                href="assets/justificatifs/certificat-ateliers-eau-odc.pdf" download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <span class="certification__badge">Participation</span>
+                            <a class="certification__download" href="assets/justificatifs/certificat-ateliers-eau-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Participation à l'atelier de co-construction intitulé <strong>"Des Ateliers Dans
-                            l'Eau"</strong>,
-                        organisé au sein d'Orange Digital Center et portant sur l'innovation,
-                        la conception collaborative et la création de solutions technologiques liées à la gestion de
-                        l'eau.
+                        Atelier de co-construction sur l'innovation, la conception collaborative et les solutions
+                        technologiques liées à la gestion de l'eau, à l'origine du projet Water Cleaner Boat.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">Co-construction</span>
                         <span class="skill-tag">Innovation</span>
-                        <span class="skill-tag">Travail collaboratif</span>
-                        <span class="skill-tag">Prototypage</span>
-                        <span class="skill-tag">Design Thinking</span>
-                        <span class="skill-tag">Développement de l'application WCB</span>
+                        <span class="skill-tag">Design thinking</span>
                     </div>
                 </div>
 
-
-                <!-- Attestation - Canva & Figma-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
-                            <h3 class="certification__title">Canva & Figma</h3>
+                            <h3 class="certification__title">Canva et Figma</h3>
                             <p class="certification__issuer">Orange Digital Center</p>
                         </div>
                         <div class="certification__right">
                             <span class="certification__date">Septembre 2024</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download"
-                                href="assets/justificatifs/attestation-canva-figma-odc.pdf" download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-canva-figma-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Formation en Canva & Figma portant sur la création de designs professionnels,
-                        la conception graphique, le prototypage et la réalisation de supports visuels modernes.
+                        Formation à la création de designs professionnels, à la conception graphique et au
+                        prototypage.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">Canva</span>
                         <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Design Graphique</span>
-                        <span class="skill-tag">Prototypage</span>
-                        <span class="skill-tag">Créativité</span>
+                        <span class="skill-tag">Design graphique</span>
                     </div>
                 </div>
 
-
-                <!-- Attestation - ReactJS-->
                 <div class="certification__item">
                     <div class="certification__header">
                         <div class="certification__left">
@@ -804,57 +782,49 @@
                         <div class="certification__right">
                             <span class="certification__date">Avril 2024</span>
                             <span class="certification__badge">Attesté</span>
-                            <a class="certification__download" href="assets/justificatifs/attestation-reactjs-odc.pdf"
-                                download>
-                                <i class='bx bx-download'></i>
-                                Justificatif
+                            <a class="certification__download" href="assets/justificatifs/attestation-reactjs-odc.pdf" download>
+                                <i class='bx bx-download'></i> Justificatif
                             </a>
                         </div>
                     </div>
-
                     <p class="certification__description">
-                        Participation à la formation intensive en ReactJS organisée par Orange Digital Center,
-                        incluant les concepts avancés : composants, hooks, gestion d'état et bonnes pratiques.
+                        Formation intensive à ReactJS : composants, hooks, gestion d'état et bonnes pratiques.
                     </p>
-
                     <div class="certification__skills">
                         <span class="skill-tag">ReactJS</span>
                         <span class="skill-tag">Hooks</span>
-                        <span class="skill-tag">Components</span>
+                        <span class="skill-tag">Composants</span>
                     </div>
                 </div>
-            </div>
-    </div>
-    </section>
 
+            </div>
+        </div>
+    </section>
 
     <!--===== DISTINCTIONS =====-->
     <section class="distinctions section" id="distinctions">
         <div class="container">
-            <h2 class="section-title">Prix & Distinctions</h2>
+            <h2 class="section-title">Prix et distinctions</h2>
 
             <div class="leadership__container">
                 <div class="leadership__item">
-                    <div class="leadership__icon">
-                        <i class='bx bx-trophy'></i>
-                    </div>
+                    <div class="leadership__icon"><i class='bx bx-trophy'></i></div>
                     <div class="leadership__content">
                         <div class="leadership__header">
                             <div>
-                                <h3 class="leadership__title">1er Prix, Concours Étudiants Entrepreneurs</h3>
+                                <h3 class="leadership__title">1<sup>er</sup> Prix, Concours Étudiants Entrepreneurs</h3>
                                 <p class="leadership__organization">Maison de l'Entrepreneuriat, Université Kofi Annan de Guinée</p>
                             </div>
                             <span class="leadership__period">2026</span>
                         </div>
                         <p class="leadership__description">
-                            Conception de l'expérience UX/UI de <strong><a href="https://healthsecure.app" target="_blank" rel="noopener noreferrer">HealthSecure</a></strong>, solution de santé connectée
-                            permettant de surveiller les patients en temps réel (24h/24, 7j/7), en équipe de 5.
-                            Rôle : UX/UI Designer.
+                            Conception de l'expérience UX/UI de <strong>HealthSecure</strong>, solution de santé
+                            connectée de suivi des patients en temps réel, en équipe de 5. Rôle : UX/UI Designer.
                         </p>
                         <ul class="leadership__achievements">
-                            <li>1ère place sur l'ensemble des projets présentés au concours</li>
-                            <li>Conception complète de l'expérience utilisateur (UX/UI)</li>
-                            <li>Objectif : contribuer à sauver des vies grâce à l'innovation technologique</li>
+                            <li>1<sup>re</sup> place sur l'ensemble des projets présentés au concours</li>
+                            <li>Conception complète de l'expérience utilisateur et des interfaces</li>
+                            <li>Finaliste de l'appel à projets innovants de YEN (Youth Engineers Network), Africa Engineering Summit</li>
                         </ul>
                     </div>
                 </div>
@@ -862,135 +832,118 @@
         </div>
     </section>
 
-
     <!--===== LEADERSHIP =====-->
     <section class="leadership section" id="leadership">
         <div class="container">
-            <h2 class="section-title">Leadership & Impacts Associatifs</h2>
+            <h2 class="section-title">Leadership et engagement associatif</h2>
 
             <div class="leadership__container">
-                <!-- Leadership 1 -->
+
                 <div class="leadership__item">
-                    <div class="leadership__icon">
-                        <i class='bx bx-building'></i>
-                    </div>
+                    <div class="leadership__icon"><i class='bx bx-building'></i></div>
                     <div class="leadership__content">
                         <div class="leadership__header">
                             <div>
-                                <h3 class="leadership__title">Fondateur & Directeur Général</h3>
+                                <h3 class="leadership__title">Fondateur</h3>
                                 <p class="leadership__organization">Fabisi TECH</p>
                             </div>
-                            <span class="leadership__period">2022 - Présent</span>
+                            <span class="leadership__period">2022 – Présent</span>
                         </div>
                         <p class="leadership__description">
-                            Création et direction d'une entreprise technologique spécialisée dans la vente des matériels
-                            informatiques et le développement
-                            de solutions web et mobiles innovantes pour les entreprises locales.
+                            Entreprise de services informatiques (vente de matériel, développement de solutions web)
+                            en cours de formalisation juridique.
                         </p>
                         <ul class="leadership__achievements">
-                            <li>Équipe de 3 étudiants développeurs</li>
-                            <li>Plus de 5 projets clients livrés avec succès</li>
+                            <li>Équipe de trois développeurs</li>
+                            <li>Clients dont CAS-MARKET (marketplace) ; partenariat avec l'ASEEP</li>
                             <li>Développement de plateformes e-commerce et éducatives</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Leadership 2 -->
                 <div class="leadership__item">
-                    <div class="leadership__icon">
-                        <i class='bx bx-group'></i>
-                    </div>
+                    <div class="leadership__icon"><i class='bx bx-group'></i></div>
                     <div class="leadership__content">
                         <div class="leadership__header">
                             <div>
-                                <h3 class="leadership__title">Président</h3>
-                                <p class="leadership__organization">AJEPK - Association des Jeunes pour l'Education Primaire de
-                                    Kankalabé</p>
+                                <h3 class="leadership__title">Cofondateur et Président</h3>
+                                <p class="leadership__organization">AJEPK, Association des Jeunes pour l'Éducation Primaire de Kankalabé</p>
                             </div>
-                            <span class="leadership__period">2025 - Présent</span>
+                            <span class="leadership__period">2025 – Présent</span>
                         </div>
                         <p class="leadership__description">
-                            Direction d'une association œuvrant pour l'amélioration de l'éducation primaire
-                            dans la sous-préfecture de Kankalabé.
+                            Association œuvrant pour l'amélioration de l'éducation primaire à Kankalabé. Fondée en
+                            2025, elle a adopté ses statuts en avril 2026.
                         </p>
                         <ul class="leadership__achievements">
-                          <li>Organisation de campagnes de sensibilisation à l'éducation et appui aux enseignants et établissements scolaires primaires.</li>
-                          <li>Distribution de kits scolaires complets à plus de 70 enfants en petite section de maternelle durant l'année scolaire 2025-2026.</li>
-                          <li>Mobilisation de la communauté et coordination d'une équipe de bénévoles pour soutenir la rénovation des écoles primaires.</li>
+                            <li>73 kits scolaires complets distribués en 2025-2026 (petite section de l'école de Kankalabé centre)</li>
+                            <li>55 kits en 2026-2027 dans deux écoles pilotes (Dantaba Toumania et Thioro Missidé)</li>
+                            <li>Coordination d'une équipe de bénévoles</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Leadership 3 -->
                 <div class="leadership__item">
-                    <div class="leadership__icon">
-                        <i class='bx bx-book'></i>
-                    </div>
+                    <div class="leadership__icon"><i class='bx bx-book'></i></div>
                     <div class="leadership__content">
                         <div class="leadership__header">
                             <div>
                                 <h3 class="leadership__title">Secrétaire Technique</h3>
-                                <p class="leadership__organization">ASEEP - Association des Étudiants de l'École Polytechnique
-                                    de l'Université Kofi Annan de Guinée</p>
+                                <p class="leadership__organization">ASEEP, Association des Étudiants de l'École Polytechnique, Université Kofi Annan de Guinée</p>
                             </div>
-                            <span class="leadership__period">Déc. 2024 - Déc. 2025</span>
+                            <span class="leadership__period">Déc. 2024 – Déc. 2025</span>
                         </div>
                         <p class="leadership__description">
-                            Gestion des aspects techniques et numériques de l'association étudiante,
-                            incluant le développement de plateformes et outils de communication.
+                            Gestion des aspects techniques et numériques de l'association étudiante.
                         </p>
                         <ul class="leadership__achievements">
-                            <li>Développement de la plateforme collaborative MoulaBox-ASEEP</li>
-                            <li>Digitalisation des processus administratifs de l'association</li>
+                            <li>Développement du frontend de la plateforme MoulaBox-ASEEP</li>
+                            <li>Digitalisation des processus de l'association</li>
                             <li>Formation des membres aux outils numériques</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Leadership 4 -->
                 <div class="leadership__item">
-                    <div class="leadership__icon">
-                        <i class='bx bx-chip'></i>
-                    </div>
+                    <div class="leadership__icon"><i class='bx bx-chip'></i></div>
                     <div class="leadership__content">
                         <div class="leadership__header">
                             <div>
-                                <h3 class="leadership__title">Membre Équipe Technologique</h3>
+                                <h3 class="leadership__title">Membre de l'équipe technologique</h3>
                                 <p class="leadership__organization">Projet Water Cleaner Boat</p>
                             </div>
                             <span class="leadership__period">2024</span>
                         </div>
                         <p class="leadership__description">
-                            Contribution au développement technologique d'un bateau nettoyeur autonome
-                            pour la dépollution des plans d'eau.
+                            Contribution au développement technologique d'un bateau nettoyeur autonome pour la
+                            dépollution des plans d'eau.
                         </p>
                         <ul class="leadership__achievements">
-                            <li>Développement de l'application WCB</li>
-                            <li>Intégration des capteurs environnementaux</li>
+                            <li>Prototype d'application web (non déployé)</li>
+                            <li>Intégration de capteurs environnementaux</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-
-
     <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
         <div class="container">
-            <h2 class="section-title">Contactez-Moi</h2>
+            <h2 class="section-title">Contact</h2>
 
             <div class="contact__container">
                 <form class="contact__form" id="contact-form" action="https://formspree.io/f/mrpzaawe" method="POST">
                     <div class="form-group">
-                        <label for="name">Nom Complet *</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom complet" autocomplete="name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" required>
                     </div>
 
                     <div class="form-group">
@@ -1000,8 +953,7 @@
 
                     <div class="form-group">
                         <label for="message">Message *</label>
-                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..."
-                            required></textarea>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
                     </div>
 
                     <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
@@ -1009,12 +961,14 @@
 
                     <button type="submit" class="btn btn-primary">
                         <i class='bx bx-send'></i>
-                        Envoyer le Message
+                        Envoyer le message
                     </button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
     </section>
+    </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
@@ -1023,59 +977,39 @@
                 <div>
                     <h3 class="footer__title">Boubacar SIDIBE</h3>
                     <p class="footer__text">
-                        Ingénieur d'État en Génie Informatique passionné par l'innovation et les nouvelles
-                        technologies.
+                        Ingénieur en Génie Informatique, développeur web et mobile.
                     </p>
                     <div class="footer__social">
-                        <a href="https://www.linkedin.com/in/boubacar-sidibe" class="footer__link" target="_blank"
-                            rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class='bx bxl-linkedin'></i>
-                        </a>
-                        <a href="https://github.com/BOUBACARSI" class="footer__link" target="_blank"
-                            rel="noopener noreferrer" aria-label="GitHub">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                        <a href="mailto:elabubakr1161@gmail.com" class="footer__link" aria-label="Email">
-                            <i class='bx bx-envelope'></i>
-                        </a>
-                        <a href="https://wa.me/224624013003" class="footer__link" aria-label="WhatsApp">
-                            <i class='bx bxl-whatsapp'></i>
-                        </a>
+                        <a href="https://www.linkedin.com/in/boubacar-sidibe" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/BOUBACARSI" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="mailto:elabubakr1161@gmail.com" class="footer__link" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                        <a href="https://wa.me/224624013003" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="footer__title">Focus</h3>
+                    <h3 class="footer__title">Navigation</h3>
+                    <p class="footer__text"><a href="#formation">Formation</a></p>
                     <p class="footer__text"><a href="#projects">Projets</a></p>
-                    <p class="footer__text"><a href="#experience">Expérience</a></p>
-                    <p class="footer__text"><a href="#skills">Compétences</a></p>
-                    <p class="footer__text"><a href="#certifications">Certification</a></p>
+                    <p class="footer__text"><a href="#experience">Expériences</a></p>
+                    <p class="footer__text"><a href="#certifications">Certifications</a></p>
                 </div>
 
                 <div>
                     <h3 class="footer__title">Contact</h3>
-                    <p class="footer__text">
-                        <i class='bx bx-envelope'></i> elabubakr1161@gmail.com
-                    </p>
-                    <p class="footer__text">
-                        <i class='bx bx-phone'></i> +224 624 01 30 03
-                    </p>
-                    <p class="footer__text">
-                        <i class='bx bx-map'></i> Conakry, Guinée
-                    </p>
+                    <p class="footer__text"><i class='bx bx-envelope'></i> <a href="mailto:elabubakr1161@gmail.com">elabubakr1161@gmail.com</a></p>
+                    <p class="footer__text"><i class='bx bx-phone'></i> <a href="tel:+224624013003">+224 624 01 30 03</a></p>
+                    <p class="footer__text"><i class='bx bx-map'></i> Conakry, Guinée</p>
                 </div>
             </div>
 
-            <p class="footer__copy">
-                &copy; 2026 Boubacar SIDIBE || Fabisi TECH. Tous droits réservés.
-            </p>
+            <p class="footer__copy">&copy; 2026 Boubacar SIDIBE. Tous droits réservés.</p>
         </div>
     </footer>
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <!--===== SCRIPTS =====-->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
