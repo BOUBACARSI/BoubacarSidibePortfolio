@@ -460,14 +460,19 @@ p, li, h1, h2, h3 { overflow-wrap: anywhere; }
 .experience__description { margin-bottom: var(--mb-2); }
 .experience__description li,
 .leadership__achievements li {
-  padding: 0.25rem 0;
+  position: relative;
+  padding: 0.25rem 0 0.25rem 1.4rem;
   color: var(--text-light);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
 }
-.experience__description li::before { content: '▸'; color: var(--primary-text); font-weight: bold; flex-shrink: 0; }
-.leadership__achievements li::before { content: '✓'; color: var(--primary-text); font-weight: bold; flex-shrink: 0; }
+.experience__description li::before,
+.leadership__achievements li::before {
+  position: absolute;
+  left: 0;
+  color: var(--primary-text);
+  font-weight: bold;
+}
+.experience__description li::before { content: '▸'; }
+.leadership__achievements li::before { content: '✓'; }
 
 .experience__tags, .project-card__tags, .certification__skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
@@ -505,8 +510,8 @@ p, li, h1, h2, h3 { overflow-wrap: anywhere; }
   margin-bottom: var(--mb-2);
 }
 .skill-card h3 { font-size: var(--h3-font); margin-bottom: var(--mb-1); }
-.skill-list li { padding: 0.4rem 0; color: var(--text-light); display: flex; gap: 0.5rem; }
-.skill-list li::before { content: '✓'; color: var(--primary-text); font-weight: bold; }
+.skill-list li { position: relative; padding: 0.4rem 0 0.4rem 1.4rem; color: var(--text-light); }
+.skill-list li::before { content: '✓'; color: var(--primary-text); font-weight: bold; position: absolute; left: 0; }
 
 .tech-stack { margin-top: var(--mb-6); padding-top: var(--mb-4); border-top: 1px solid var(--border-color); }
 .tech-stack__title { text-align: center; font-size: var(--h3-font); margin-bottom: var(--mb-4); color: var(--primary-text); }
